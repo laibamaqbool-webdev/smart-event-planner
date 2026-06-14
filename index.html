@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eventique – Smart Event Planner</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Eventique<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-cta">
+            <button class="btn-outline" onclick="openModal()">Log In</button>
+            <button class="btn-primary" onclick="openModal()">Get Started</button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <div class="hero-badge">AI-Powered Event Planning</div>
+                <h1 class="hero-title">Plan <em>Extraordinary</em><br>Events — Effortlessly</h1>
+                <p class="hero-sub">From intimate gatherings to grand celebrations, Eventique brings every detail
+                    together — smart scheduling, vendor discovery, guest management, and real-time budgeting.</p>
+                <div class="hero-btns">
+                    <button class="btn-big gold" onclick="openModal()">Plan Your Event</button>
+                    <button class="btn-big ghost"
+                        onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">See How It
+                        Works</button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-num">12k+</div>
+                        <div class="stat-label">Events Planned</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">500+</div>
+                        <div class="stat-label">Verified Vendors</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="event-card-demo">
+                    <div class="ecd-header">
+                        <div class="ecd-title">Raza & Sara's Wedding</div>
+                        <div class="ecd-badge">On Track</div>
+                    </div>
+                    <div class="ecd-date"><i class="fa-regular fa-calendar"></i> December 20, 2025 · Lahore</div>
+                    <div class="ecd-progress-label"><span>Planning Progress</span><span>72%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:0%"></div>
+                    </div>
+                    <div class="ecd-tasks">
+                        <div class="task-item">
+                            <div class="task-check done">✓</div> Venue Booked
+                        </div>
+                        <div class="task-item">
+                            <div class="task-check done">✓</div> Catering Confirmed
+                        </div>
+                        <div class="task-item">
+                            <div class="task-check done">✓</div> Guest List Finalized
+                        </div>
+                        <div class="task-item">
+                            <div class="task-check" style="border-color:#c9a84c"></div> Photography Package
+                        </div>
+                        <div class="task-item">
+                            <div class="task-check"></div> Décor & Florals
+                        </div>
+                    </div>
+                    <div class="float-chip"><strong>PKR 2.4M</strong>Budget tracked</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="section-head">
+                <div class="section-label">Why Eventique</div>
+                <h2 class="section-title">Everything You Need,<br>Nothing You Don't</h2>
+                <p class="section-sub">Smart tools designed for planners who care about every detail.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-solid fa-calendar"></i></div>
+                    <div class="fc-title">Smart Scheduling</div>
+                    <p class="fc-desc">AI suggests the best dates, avoids conflicts, and syncs with your team's
+                        calendars automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                    <div class="fc-title">Budget Tracker</div>
+                    <p class="fc-desc">Set your budget and watch it update in real-time as you book vendors and confirm
+                        services.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="fc-title">Vendor Marketplace</div>
+                    <p class="fc-desc">Browse 500+ verified caterers, photographers, DJs, and decorators with
+                        transparent pricing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="fc-title">Guest Management</div>
+                    <p class="fc-desc">Send digital invites, track RSVPs, manage dietary preferences, and seat guests in
+                        one view.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="fc-title">Task Checklists</div>
+                    <p class="fc-desc">Pre-built event timelines with smart reminders so nothing slips through the
+                        cracks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="fc-icon"><i class="fa-regular fa-chart-bar"></i></div>
+                    <div class="fc-title">Live Analytics</div>
+                    <p class="fc-desc">Real-time dashboards showing attendance trends, spending breakdowns, and vendor
+                        performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="section-head">
+                <div class="section-label">Event Types</div>
+                <h2 class="section-title">Plan Any Event,<br>Any Scale</h2>
+                <p class="section-sub">Templates and tools tailored for every kind of celebration.</p>
+            </div>
+            <div class="events-tabs">
+                <button class="tab-btn active" onclick="filterEvents('all', this)">All Events</button>
+                <button class="tab-btn" onclick="filterEvents('wedding', this)">Weddings</button>
+                <button class="tab-btn" onclick="filterEvents('corporate', this)">Corporate</button>
+                <button class="tab-btn" onclick="filterEvents('social', this)">Social</button>
+            </div>
+            <div class="events-grid">
+                <div class="event-card visible" data-cat="wedding">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd9)">💍<span
+                            class="ec-category">Wedding</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 500 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.9</span></div>
+                        <div class="ec-name">Grand Wedding Package</div>
+                        <p class="ec-desc">Full ceremony & reception planning with premium vendor access and on-site
+                            coordinator.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 150k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card visible" data-cat="corporate">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)">🏢<span
+                            class="ec-category">Corporate</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 300 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.8</span></div>
+                        <div class="ec-name">Corporate Conference</div>
+                        <p class="ec-desc">End-to-end conference management with AV setup, speaker coordination, and
+                            live streaming.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 80k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card visible" data-cat="social">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#f3e5f5,#ce93d8)">🎂<span
+                            class="ec-category">Social</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 100 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.9</span></div>
+                        <div class="ec-name">Birthday Celebration</div>
+                        <p class="ec-desc">Themed birthday parties with décor, cake, entertainment, and photography
+                            included.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 30k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card visible" data-cat="wedding">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffcc80)">🌸<span
+                            class="ec-category">Wedding</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 200 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.7</span></div>
+                        <div class="ec-name">Intimate Nikkah</div>
+                        <p class="ec-desc">Elegant small-scale ceremonies with floral arrangements, catering, and
+                            digital invitations.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 60k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card visible" data-cat="corporate">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#e8f5e9,#a5d6a7)">🚀<span
+                            class="ec-category">Corporate</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 150 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.8</span></div>
+                        <div class="ec-name">Product Launch</div>
+                        <p class="ec-desc">High-impact launch events with media coverage, brand setups, and influencer
+                            invitations.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 100k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card visible" data-cat="social">
+                    <div class="ec-thumb" style="background:linear-gradient(135deg,#fce4ec,#ef9a9a)">🎓<span
+                            class="ec-category">Social</span></div>
+                    <div class="ec-body">
+                        <div class="ec-meta"><span>Up to 250 guests</span><span><i class="fa-solid fa-star"></i>
+                                4.9</span></div>
+                        <div class="ec-name">Graduation Party</div>
+                        <p class="ec-desc">Celebrate achievements with custom photo booths, themed décor, and gourmet
+                            catering.</p>
+                        <div class="ec-footer">
+                            <div class="ec-price">From PKR 45k</div><button class="ec-btn" onclick="openModal()">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how">
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="section-head" style="text-align:center">
+                <div class="section-label">The Process</div>
+                <h2 class="section-title">From Idea to Unforgettable</h2>
+                <p class="section-sub" style="margin:0 auto">Four simple steps to the event of your dreams.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Tell Us Your Vision</div>
+                    <p class="step-desc">Answer a few questions about your event — date, size, style, and budget.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Get AI Recommendations</div>
+                    <p class="step-desc">Our smart engine matches you with perfect venues, vendors, and timelines.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Customize & Book</div>
+                    <p class="step-desc">Tweak every detail and confirm bookings directly through the platform.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <div class="step-title">Enjoy Your Event</div>
+                    <p class="step-desc">We handle the logistics. You create the memories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="section-head" style="text-align:center">
+                <div class="section-label">Happy Clients</div>
+                <h2 class="section-title">Events That Became Memories</h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Eventique turned our chaotic wedding planning into the most organized,
+                        stress-free experience. Every vendor was top-notch and everything ran perfectly on the day."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:#fce4ec"><i class="fa-solid fa-child"></i></div>
+                        <div>
+                            <div class="testi-name">Ayesha Malik</div>
+                            <div class="testi-role">Bride · Lahore</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"We used Eventique for our annual product launch. The vendor marketplace saved
+                        us hours of calls, and the budget tracker kept us perfectly on target."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:#e3f2fd"><i class="fa-solid fa-hat-cowboy"></i>
+                        </div>
+                        <div>
+                            <div class="testi-name">Omar Farooq</div>
+                            <div class="testi-role">Marketing Director · Karachi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"My daughter's graduation party was absolutely magical. I planned everything
+                        in two weeks using Eventique — something I thought was impossible!"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar" style="background:#f3e5f5"><i class="fa-solid fa-bomb"></i></div>
+                        <div>
+                            <div class="testi-name">Sana Raza</div>
+                            <div class="testi-role">Parent · Islamabad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div style="max-width:1200px;margin:0 auto">
+            <div class="section-head" style="text-align:center">
+                <div class="section-label">Pricing</div>
+                <h2 class="section-title">Simple, Transparent Plans</h2>
+                <p class="section-sub" style="margin:0 auto">No hidden fees. Cancel anytime.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-tier">STARTER</div>
+                    <div class="price-amount"><sup>PKR</sup>0</div>
+                    <div class="price-period">Free forever</div>
+                    <ul class="price-features">
+                        <li>1 event at a time</li>
+                        <li>Up to 50 guests</li>
+                        <li>Basic checklists</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="price-cta" onclick="openModal()">Get Started Free</button>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="price-tier">PRO</div>
+                    <div class="price-amount"><sup>PKR</sup>4,999</div>
+                    <div class="price-period">per month</div>
+                    <ul class="price-features">
+                        <li>Unlimited events</li>
+                        <li>Up to 500 guests</li>
+                        <li>Vendor marketplace</li>
+                        <li>AI recommendations</li>
+                        <li>Budget tracker</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button class="price-cta" onclick="openModal()">Start Pro Trial</button>
+                </div>
+                <div class="price-card">
+                    <div class="price-tier">ENTERPRISE</div>
+                    <div class="price-amount" style="font-size:1.8rem">Custom</div>
+                    <div class="price-period">billed annually</div>
+                    <ul class="price-features">
+                        <li>Everything in Pro</li>
+                        <li>Unlimited guests</li>
+                        <li>Dedicated planner</li>
+                        <li>White-label option</li>
+                        <li>API access</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <button class="price-cta" onclick="openModal()">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-label" style="text-align:center">Stay in the Loop</div>
+        <h2 class="section-title" style="text-align:center">Ready to Plan Something <em
+                style="color:var(--gold);font-style:normal">Unforgettable?</em></h2>
+        <p class="section-sub" style="text-align:center;margin:0 auto 36px">Join 12,000+ event planners who trust
+            Eventique.</p>
+        <div class="newsletter-form">
+            <input class="nl-input" type="email" placeholder="Enter your email address" id="nlEmail" />
+            <button class="nl-submit" onclick="subscribe()">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Eventique<span>.</span></div>
+        <div class="footer-links">
+            <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Blog</a><a href="#">Contact</a>
+        </div>
+        <div class="footer-copy">© 2025 Eventique. All rights reserved.</div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <h2>Start Planning</h2>
+            <p>Create your free account and plan your first event in minutes.</p>
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="e.g. Ahmed Khan" /></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group"><label>Event Type</label><select>
+                    <option>Select event type...</option>
+                    <option>Wedding</option>
+                    <option>Corporate Event</option>
+                    <option>Birthday Party</option>
+                    <option>Graduation Party</option>
+                    <option>Other</option>
+                </select></div>
+            <button class="modal-submit" onclick="submitForm()">Create Free Account →</button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
